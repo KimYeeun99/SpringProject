@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 1234
+  jwt:
+    secret: jwtsecretkey
+
+mybatis:
+  type-aliases-package: com.social.project.dto
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+server:
+  port: 3000
